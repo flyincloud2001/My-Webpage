@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Projects · Foster Teng</title>
+  <meta name="description" content="Academic and research projects by Foster Teng in mathematics and physics." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <header class="container header">
+    <a class="logo" href="index.html">
+      <span class="logo-dot"></span>
+      <span>Foster Teng</span>
+    </a>
+
+    <nav class="nav">
+      <a href="index.html#about">About</a>
+      <a href="index.html#projects">Projects</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main class="container">
+
+    <!-- Project 1 -->
+    <section id="einstein" class="section">
+      <div class="section-head">
+        <h2>The Least Action Principle for the Einstein Field Equation</h2>
+        <p>General Relativity · Variational Methods</p>
+      </div>
+
+      <div class="card">
+        <p>
+          This project presents a rigorous derivation of the Einstein field equations
+          using the principle of stationary action. Starting from the Einstein Hilbert
+          action, I carefully vary both the Ricci scalar and the metric determinant.
+        </p>
+
+        <p>
+          The derivation includes full proofs of key identities such as the Palatini
+          identity and Jacobi’s formula, along with a precise treatment of divergence
+          terms and boundary contributions.
+        </p>
+
+        <div class="tagrow">
+          <span class="tag">General Relativity</span>
+          <span class="tag">Variational Calculus</span>
+          <span class="tag">Differential Geometry</span>
+        </div>
+
+        <div class="links" style="margin-top:16px">
+          <a href="assets/least-action-einstein.pdf" target="_blank">Read PDF</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Project 2 -->
+    <section id="algebra" class="section">
+      <div class="section-head">
+        <h2>Visualization of Algebraic Structures</h2>
+        <p>Group Theory · MATLAB Visualization</p>
+      </div>
+
+      <div class="card">
+        <p>
+          This project explores the visualization of finite cyclic groups and their
+          direct products using MATLAB. Subgroup structures, Cayley tables, and
+          geometric patterns are visualized to reveal algebraic structure.
+        </p>
+
+        <p>
+          The work emphasizes how visual representations can support intuition
+          and structural understanding in abstract algebra.
+        </p>
+
+        <div class="tagrow">
+          <span class="tag">Group Theory</span>
+          <span class="tag">Visualization</span>
+          <span class="tag">MATLAB</span>
+        </div>
+
+        <div class="links" style="margin-top:16px">
+          <a href="assets/algebraic-structures.pdf" target="_blank">Read PDF</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Project 3 -->
+    <section id="hyperbolic" class="section">
+      <div class="section-head">
+        <h2>Hyperbolic Geometry and Busemann Cocycles</h2>
+        <p>Geometry · Dynamical Systems</p>
+      </div>
+
+      <div class="card">
+        <p>
+          This reading project studies hyperbolic geometry on the upper half plane,
+          including conformal maps, horocycles, and Busemann cocycles.
+        </p>
+
+        <p>
+          The project also examines the action of Fuchsian groups and the construction
+          of Dirichlet domains, emphasizing geometric and dynamical perspectives.
+        </p>
+
+        <div class="tagrow">
+          <span class="tag">Hyperbolic Geometry</span>
+          <span class="tag">Group Actions</span>
+          <span class="tag">Geometric Analysis</span>
+        </div>
+
+        <div class="links" style="margin-top:16px">
+          <a href="assets/hyperbolic-geometry.pdf" target="_blank">Read PDF</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer container">
+    <p class="muted">© <span id="year"></span> Foster Teng</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
